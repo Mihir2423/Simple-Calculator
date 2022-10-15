@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #e0e0e0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Container section Starts */
+
+.calculator-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Container section Ends */
+
+
+/* Main calculator section Starts */
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 265px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 11px 11px 16px #898888,
+    -11px -11px 16px #f9f9f9;
+}
+
+.calculator.off {
+  box-shadow: 11px 11px 16px #252424,
+    -11px -11px 16px #f2efef;
+}
+
+.calculator .ouptut {
+  background-color: rgb(35, 36, 45);
+  display: flex;
+  min-height: 80px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.calculator.off .ouptut {
+  background-color: rgb(254, 254, 255);
+}
+
+.calculator .ouptut .prev_operand {
+  color: rgb(223, 222, 225);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+}
+
+.calculator .ouptut .prev_operand.off {
+  color: black;
+}
+
+.calculator .ouptut .prev_operand .red-color {
+  color: rgb(234, 119, 118);
+  ;
+}
+
+.calculator .ouptut .curr_operand {
+  color: rgb(254, 254, 255);
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.calculator .ouptut .curr_operand.off {
+  color: rgb(43, 42, 42);
+}
+
+/* Main calculator section Ends */
+
+/* Button Section Starts */
+
+.calculator .row {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  background-color: rgb(40, 44, 54);
+}
+
+.calculator .row.off {
+  background-color: rgb(248, 248, 249);
+}
+
+.calculator .row button {
+  width: 55px;
+  border-radius: 60px;
+  outline: none;
+  border: none;
+  height: 50px;
+  font-size: 22px;
+  color: white;
+  font-weight: 400;
+  background-color: rgb(38, 42, 51);
+  cursor: pointer;
+}
+
+.calculator .row.off button {
+  color: black;
+  background-color: rgb(244, 246, 244);
+}
+
+.calculator .row .aqua-clr,
+.calculator .row.off .aqua-clr {
+  color: rgb(38, 246, 209);
+  font-size: 18px;
+}
+
+.calculator .row .red-color,
+.calculator .row.off .red-color {
+  color: rgb(234, 119, 118);
+  font-size: 26px;
+}
+
+/* Button Section Ends */
+
+/* Icons Section Starts */
+
+.icons-container {
+  padding: 10px;
+  background-color: rgb(35, 36, 45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.icons-container.off {
+  background-color: rgb(254, 254, 255);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 17px;
+  padding: 4px 17px;
+  border-radius: 10px;
+  background-color: #282c36;
+  width: fit-content;
+}
+
+.icons.off {
+  background-color: rgb(241, 241, 243);
+}
+
+.sun,
+.moon {
+  cursor: pointer;
+}
+
+.sun {
+  color: rgb(247, 48, 8);
+}
+
+.moon {
+  color: rgb(119, 116, 116);
+}
+
+.sun.off,
+.moon.off {
+  color: black;
+}
+
+.hr{
+  width: 50px;
+  color: grey;
+}
+
+
+/* Icons Section Ends */
